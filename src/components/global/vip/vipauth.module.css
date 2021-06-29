@@ -1,0 +1,92 @@
+.vipauth {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(255, 0, 122, 0.4) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-color: rgba(93, 66, 189, 0.1);
+}
+
+.container {
+  width: var(--c-width);
+  margin: 0 auto;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  padding: 1em;
+  background-color: var(--clr-accent);
+  border-radius: 10px;
+  /* box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22); */
+  max-width: 30em;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.description {
+  opacity: 0.7;
+  margin-bottom: 1.5em;
+}
+
+.btnContainer {
+  display: flex;
+}
+
+.btn {
+  font-size: var(--fs-body);
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  color: var(--clr-light);
+  background-color: transparent;
+  border: 2px solid var(--clr-light);
+  border-radius: 5px;
+  transition: all 0.3s;
+  min-width: 7em;
+  opacity: 0.7;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+#marginRight {
+  margin-right: 1em;
+}
+
+.ii {
+  font-size: var(--fs-h4);
+  color: var(--clr-light);
+}
+
+.close {
+  transition: all 0.3s;
+}
+
+.close:hover {
+  transform: scale(1.1);
+}

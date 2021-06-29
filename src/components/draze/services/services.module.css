@@ -1,0 +1,90 @@
+.services {
+  margin-bottom: 15em;
+}
+
+.container {
+  width: var(--c-width);
+  margin: 0 auto;
+}
+
+.title {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 0;
+  line-height: 1;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+}
+
+.childparent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2.5em;
+}
+
+.child {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  max-width: 500px;
+}
+
+.timescaleContainer {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.timescaleContainer canvas {
+  vertical-align: bottom;
+}
+
+.serviceTitle {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+
+.servicesContainer {
+  padding: 1em;
+  text-align: center;
+}
+
+.servicesDescription {
+  text-align: center;
+  opacity: 0.7;
+  margin-bottom: 1.5em;
+  min-height: 6.5em;
+}
+
+/* .marginLeft {
+  margin-left: 2.5em;
+} */
+
+/* #marginBottom {
+  margin-bottom: 2.5em;
+} */
+
+@media (max-width: 510px) {
+  .title {
+    margin-bottom: 2.5em;
+  }
+
+  .timescaleContainer {
+    display: none;
+  }
+
+  .child {
+    border: none;
+  }
+
+  .servicesDescription {
+    margin: 0;
+    margin-bottom: 1em;
+    min-height: 0;
+  }
+}

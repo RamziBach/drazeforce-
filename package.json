@@ -9,9 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "axios": "^0.21.1",
+    "cookies": "^0.8.0",
+    "formik": "^2.2.9",
+    "locomotive-scroll": "^4.1.1",
+    "matter-js": "^0.17.1",
     "next": "11.0.1",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-locomotive-scroll": "^0.1.8",
+    "react-parallax-tilt": "^1.4.81",
+    "react-player": "^2.9.0",
+    "yup": "^0.32.9"
   },
   "devDependencies": {
     "eslint": "7.29.0",

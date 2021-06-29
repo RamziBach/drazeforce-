@@ -1,0 +1,164 @@
+.discography {
+  margin-bottom: 15em;
+}
+
+.container {
+  width: var(--c-width);
+  margin: 0 auto;
+}
+
+.title {
+  text-transform: uppercase;
+  color: var(--clr-light);
+  line-height: 1;
+  margin-bottom: 2em;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5em;
+}
+
+.albums {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallaxEffect {
+  text-align: center;
+  width: 600px;
+  height: 600px;
+  border-radius: 5px;
+  transform-style: preserve-3d;
+  background-size: cover;
+  background-position: center center;
+  will-change: transform;
+  /* border: 2px solid white; */
+}
+
+.parallaxEffectEp1 {
+  background-image: url('/ep2.jpg');
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.parallaxEffectEp2 {
+  background-image: url('/ep1.jpg');
+}
+
+.parallaxEffectEp3 {
+  background-image: url('/ep3.jpg');
+}
+
+.parallaxEffectSingle1 {
+  background-image: url('/single1.jpg');
+}
+
+.parallaxEffectSingle2 {
+  background-image: url('/single2.jpg');
+}
+
+.parallaxEffectSingle3 {
+  background-image: url('/single3.jpg');
+}
+
+.contentLeft,
+.contentRight {
+  position: absolute;
+  z-index: 9;
+  pointer-events: none;
+}
+
+.contentLeft {
+  left: 10%;
+}
+
+.contentRight {
+  right: 10%;
+}
+
+.contentTitle {
+  margin: 0;
+  white-space: nowrap;
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+  cursor: default;
+  user-select: none;
+}
+
+.btnRight {
+  float: right;
+  pointer-events: auto;
+}
+
+.btnLeft {
+  float: left;
+  pointer-events: auto;
+}
+
+@media (min-width: 2100px) {
+  .contentLeft {
+    left: 15%;
+  }
+
+  .contentRight {
+    right: 15%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .parallaxEffect {
+    width: 450px;
+    height: 450px;
+  }
+
+  .contentTitle {
+    font-size: 5.5rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .contentLeft {
+    left: 5%;
+  }
+
+  .contentRight {
+    right: 5%;
+  }
+
+  .contentTitle {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .contentTitle {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .parallaxEffect {
+    width: 350px;
+    height: 350px;
+  }
+
+  .contentTitle {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .parallaxEffect {
+    width: 300px;
+    height: 300px;
+  }
+
+  .contentTitle {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,120 @@
+.landing {
+  margin-bottom: 15em;
+}
+
+.container {
+  width: var(--c-width);
+  margin: 0 auto;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 600px;
+  height: 600px;
+  transform: translateZ(60px);
+}
+
+.content {
+  text-align: center;
+  margin-left: 5em;
+}
+
+.cardTitle {
+  user-select: none;
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--clr-accent);
+}
+
+.title {
+  margin: 0;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.description {
+  font-weight: 300;
+  max-width: 34em;
+  opacity: 0.7;
+  margin: 2em 0;
+}
+
+.spotifyBtn {
+  margin-bottom: 2em;
+}
+
+.parallaxEffect {
+  text-align: center;
+  width: 600px;
+  height: 600px;
+  border-radius: 5px;
+  transform-style: preserve-3d;
+  background-image: url('/ep1.jpg');
+  background-size: cover;
+  background-position: center center;
+  will-change: transform;
+}
+
+.iconsContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media (max-width: 1600px) {
+  .parallaxEffect {
+    width: 450px;
+    height: 450px;
+  }
+
+  .card {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .parent {
+    flex-direction: column;
+  }
+
+  .content {
+    order: -1;
+    margin: 3em 0 10em 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .parallaxEffect {
+    width: 350px;
+    height: 350px;
+  }
+
+  .card {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 380px) {
+  .parallaxEffect {
+    width: 300px;
+    height: 300px;
+  }
+
+  .card {
+    width: 300px;
+    height: 300px;
+  }
+
+  .card a {
+    font-size: var(--fs-small);
+  }
+}
