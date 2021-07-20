@@ -59,7 +59,7 @@
   outline: none;
   border-bottom: 2px solid var(--clr-rgba);
   font-family: var(--ff-poppins);
-  font-size: var(--fs-h4);
+  font-size: var(--fs-h5);
   margin-top: 0.5em;
   padding: 0.2em 0;
   resize: none;
@@ -82,7 +82,7 @@
 
 .input::placeholder {
   font-family: var(--ff-poppins);
-  font-size: var(--fs-h4);
+  font-size: var(--fs-h5);
 }
 
 .input:disabled {
@@ -93,7 +93,7 @@
   text-transform: uppercase;
   font-family: var(--ff-poppins);
   font-weight: 700;
-  font-size: var(--fs-h4);
+  font-size: var(--fs-h5);
   color: var(--clr-accent);
 }
 
@@ -127,7 +127,7 @@
 
 .submitBtn {
   text-transform: uppercase;
-  font-size: var(--fs-h4);
+  font-size: var(--fs-h5);
   font-weight: 700;
   padding: 0.5em 0;
   margin: 0.5em 0;

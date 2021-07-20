@@ -7,17 +7,17 @@
   margin: 0 auto;
 }
 
-.parent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .sectionTitle {
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 2em;
   color: var(--clr-light);
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
@@ -29,7 +29,7 @@
 }
 
 .title {
-  margin: 0 0 1rem 0;
+  margin: 0;
   color: var(--clr-accent);
 }
 

@@ -70,7 +70,7 @@ const Header = ({ price, isOnVipPage = false }) => {
               className={`${styles.flex} ${styles.drazeCoin}`}
               aria-label="Draze coin price"
             >
-              <Image src="/logo2.png" alt="logo" width={60} height={60} />
+              <Image src="/logo.png" alt="logo" width={60} height={60} />
               <a
                 href="https://rally.io/creator/DRAZE/"
                 target="_blank"
