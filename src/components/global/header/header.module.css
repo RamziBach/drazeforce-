@@ -56,16 +56,15 @@
 
 .navigation {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-self: center;
-  width: 100%;
+  gap: 2em;
 }
 
 .navBtns {
   color: var(--clr-light);
   font-weight: 700;
   font-size: var(--fs-body);
-  padding: 0.5em;
   text-transform: uppercase;
   transition: all 0.3s;
 }
