@@ -18,6 +18,8 @@ const GatedContent = () => {
     getBalance();
   }, []);
 
+  if (!balance) return <h2 className={styles.title}>Loading...</h2>;
+
   if (balance === undefined || balance.error)
     return (
       <h2 className={styles.title}>
