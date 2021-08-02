@@ -21,7 +21,7 @@ const Services = () => {
                     track.
                   </p>
                   <a
-                    href="https://www.rally.io/creator/DRAZE/?inputType=USD&amount=100&note=Services for sale"
+                    href="https://rally.io/creator/DRAZE/?campaignId=bf5095c5-1cb8-4ae1-9400-d683fdb8fb5c"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-border"
@@ -40,7 +40,7 @@ const Services = () => {
                     Have your track mixed by me.
                   </p>
                   <a
-                    href="https://www.rally.io/creator/DRAZE/?inputType=USD&amount=100&note=Services for sale"
+                    href="https://rally.io/creator/DRAZE/?campaignId=45493678-6808-4ebe-979f-b5137a40b60e"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-border"
@@ -63,7 +63,7 @@ const Services = () => {
                     streams and channel.
                   </p>
                   <a
-                    href="https://www.rally.io/creator/DRAZE/?inputType=USD&amount=100&note=Services for sale"
+                    href="https://rally.io/creator/DRAZE/?campaignId=bdcd5ecf-4221-4892-b36d-0abba6c7aa41"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-border"
@@ -82,7 +82,7 @@ const Services = () => {
                     Looking for an intro or outro track?
                   </p>
                   <a
-                    href="https://www.rally.io/creator/DRAZE/?inputType=USD&amount=100&note=Services for sale"
+                    href="https://rally.io/creator/DRAZE/?campaignId=381d0e23-7c1a-4021-8620-130def1fb316"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-border"
