@@ -1,54 +1,27 @@
-import { useState, useEffect } from 'react';
-import styles from './index.module.css';
-
-const GatedContent = () => {
-  const [balance, setBalance] = useState();
-
-  const getBalance = async () => {
-    try {
-      const res = await fetch('/api/auth/balance');
-      const data = await res.json();
-      setBalance(data);
-    } catch (err) {
-      console.error(err);
-    }
-  };
-
-  useEffect(() => {
-    getBalance();
-  }, []);
-
-  if (!balance) return <h2 className={styles.title}>Loading...</h2>;
-
-  if (balance === undefined || balance.error)
-    return (
-      <h2 className={styles.title}>
-        You must be logged in to view this content.
-      </h2>
-    );
-
-  const hasDraze = balance.some(item => item.coinKind === 'DRAZE');
-  const drazeBalance = balance.find(item => item.coinKind === 'DRAZE');
-
-  if (!hasDraze)
-    return <h2 className={styles.title}>You do not own any $DRAZE coin.</h2>;
-
-  if (hasDraze && drazeBalance.coinBalance < 10)
-    return (
-      <h2 className={styles.title}>
-        You must own 10 or more $DRAZE coins to view this content.
-      </h2>
-    );
-
-  return <h2 className={styles.title}>Welcome</h2>;
-};
+import { useRouter } from 'next/router';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLock } from '@fortawesome/free-solid-svg-icons';
+import styles from './landing.module.css';
 
 const Landing = () => {
+  const router = useRouter();
+
   return (
     <div data-scroll-section>
       <section className={styles.landing}>
         <div className={styles.container}>
-          <GatedContent />
+          <div className={styles.parent}>
+            <FontAwesomeIcon icon={faLock} className={styles.lock} />
+            <h2 className={styles.title}>
+              You must be signed-in <br /> to view this content.
+            </h2>
+            <button
+              onClick={() => router.push('/api/auth')}
+              className="btn-border"
+            >
+              log in
+            </button>
+          </div>
         </div>
       </section>
     </div>
