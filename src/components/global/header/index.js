@@ -4,15 +4,15 @@ import Image from 'next/image';
 import VipAuth from '../vip';
 import MobileNav from '../mobilenav';
 import styles from './header.module.css';
-import Tooltip from '../tooltip';
+// import Tooltip from '../tooltip';
 
 const Header = ({ price, isOnVipPage = false }) => {
-  const [tooltipDisplay, setTooltipDisplay] = useState('none');
+  // const [tooltipDisplay, setTooltipDisplay] = useState('none');
   const [vipDisplay, setVipDisplay] = useState('none');
   const [isMobileDisplayOpen, setIsMobileDisplayOpen] = useState(false);
 
-  const onMouseEnterTooltip = () => setTooltipDisplay('block');
-  const handleCloseTooltip = () => setTooltipDisplay('none');
+  // const onMouseEnterTooltip = () => setTooltipDisplay('block');
+  // const handleCloseTooltip = () => setTooltipDisplay('none');
   const handleVipOpen = () => setVipDisplay('flex');
   const handleVipClose = () => setVipDisplay('none');
   const handleMobileClick = () =>
@@ -80,13 +80,13 @@ const Header = ({ price, isOnVipPage = false }) => {
               >
                 ${price}
               </a>
-              <button onMouseEnter={onMouseEnterTooltip} title="Tooltip">
+              {/* <button onMouseEnter={onMouseEnterTooltip} title="Tooltip">
                 <i className={`fas fa-info-circle ${styles.i}`}></i>
-              </button>
-              <Tooltip
+              </button> */}
+              {/* <Tooltip
                 display={tooltipDisplay}
                 handleClose={handleCloseTooltip}
-              />
+              /> */}
             </div>
             <div className={`${styles.hamburgerContainer} ${styles.flex}`}>
               <button onClick={handleMobileClick}>
