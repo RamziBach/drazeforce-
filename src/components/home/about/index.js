@@ -8,9 +8,9 @@ const About = () => {
       <section className={styles.about}>
         <div className={styles.container}>
           <h3
-            data-scroll
-            data-scroll-speed={-1}
-            data-scroll-direction="horizontal"
+            // data-scroll
+            // data-scroll-speed={-1}
+            // data-scroll-direction="horizontal"
             className={styles.sectionTitle}
           >
             Biography

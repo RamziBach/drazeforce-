@@ -20,10 +20,10 @@ const Landing = () => {
                 transitionSpeed={6000}
               >
                 <div className={styles.card}>
-                  <h2 className={styles.cardTitle}>phantom power</h2>
+                  <h2 className={styles.cardTitle}>phantom power vol. 2</h2>
                   <a
                     className="btn-bg"
-                    href="https://open.spotify.com/album/3aZgDA2OdCqUz0TQ7nzF41"
+                    href="https://open.spotify.com/album/0wDuFfTC73XxgxBA7wuCU9"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Opens spotify"

@@ -65,9 +65,9 @@ const Contact = () => {
       <section className={styles.contact}>
         <div className={styles.container}>
           <h3
-            data-scroll
-            data-scroll-speed={-1}
-            data-scroll-direction="horizontal"
+            // data-scroll
+            // data-scroll-speed={-1}
+            // data-scroll-direction="horizontal"
             className={styles.title}
           >
             get in touch
